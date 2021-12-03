@@ -1,6 +1,9 @@
-# 最も簡単、サーバとして起動するだけ
+# サーバの起動をスクリプトに書く第一歩
 FROM python:3.7-alpine
 
 EXPOSE 8000/tcp
 
-CMD ["python", "-m", "http.server", "8000"]
+COPY ./server.py /server.py
+COPY ./index.html /index.html
+
+CMD ["python", "server.py"]
