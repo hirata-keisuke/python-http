@@ -14,6 +14,8 @@ socketserver.TCPServerを使います。
 
 http.server.BaseHTTPRequestHandlerのサブクラスを作ります。
 
+(ERROR) コンテナの外から動作確認ができない。
+
 ## 参考
 
 - PythonによるHTTPサーバ立ち上げ  
